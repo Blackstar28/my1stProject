@@ -1,9 +1,13 @@
 from django.shortcuts import render
 
 # Create your views here.
-def helloworld (request):
-    return render(request,'HelloWorld.html')
-def testPath (request):
-    return render(request, 'testPath.html')
-def testPath1 (request):
-    return render(request, 'testPath1.html')
+def Name (request):
+    return render(request,'Name.html')
+def About (request):
+    return render(request,'About.html')
+def Contacts (request):
+    return render(request, 'Contacts.html')
+def Home (request):
+    return render(request, 'Home.html')
+def Portfolio (request):
+    return render(request, 'Portfolio.html')

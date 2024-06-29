@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+        <link rel="stylesheet" href="{% static 'style.css'%}">
+        <link rel="stylesheet" href="{% static 'transition.css'%}">
+        <link rel="icon" href="{% static ''%}"> 
+        <title> Title </title>
+    </head>
+
+    <body id="none"style="background-image:url('{% static 'tiger.jpg' %}');">
+
+    
+
+    <div class="header">
+        <a href="{% url 'Name'%}" class="logo">Portfolio</a>
+
+        <div class="navbar">
+            <a href="{% url 'Home' %}">Home</a>
+            <a href="{% url 'About' %}">About</a>
+            <a href="{% url 'Portfolio' %}">Portfolio</a>
+            <a href="{% url 'Contacts' %}">Contacts</a>   
+        </div>
+    </div>
+</body> 
+</html>
+

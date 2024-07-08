@@ -21,8 +21,63 @@
             <a href="{% url 'Home' %}">Home</a>
             <a href="{% url 'About' %}">About</a>
             <a href="{% url 'Portfolio' %}">Portfolio</a>
-            <a href="{% url 'Contacts' %}">Contacts</a>   
+            <a href="{% url 'Contacts' %}">Contacts</a>  
+          
         </div>
     </div>
+
+    <h1 class="title">
+        I'm <span>AJ Klein <br>a</span> Frontend and Backend Developer
+        </h1>
+        <div class="content">
+            <h1>Welcome to My Website</h1>
+            <p>This is a sample website created to demonstrate basic HTML and CSS integration using Django's static files.</p>
+            <p>Feel free to explore the different sections using the navigation bar above.</p>
+    
+            <h1 class="title">
+                I'm <span>AJ Klein D Filipino <br>and</span> (Pino)
+            </h1>
+            <p class="description">
+                 a skilled web developer with a passion for creating Wonderful, Responsive, and user-friendly websites.
+            </p>
+        </div>
+
+    <div class="container image">
+        <img src="{% static 'macho.jpg' %}" alt="profile" />
+    </div>
+    
+
+
+   <style>
+            .image {
+                display: flex;
+                justify-content: flex-end;
+                margin: 30px;
+            }
+
+            .image img {
+                width: min(20rem, 90%);
+                border-radius: 90px;
+            }
+           body, html {
+        height: center;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+    }
+    
+    
+    .content {
+            text-align: left;
+            max-width: 600px;
+            padding: 20px 100px;
+            background: rgba(0, 0, 0, 0.5); /* Optional: Add background for readability */
+            border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+        }
+        </style>
+
+
 </body> 
 </html>

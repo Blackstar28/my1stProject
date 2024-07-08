@@ -24,6 +24,87 @@
             <a href="{% url 'Contacts' %}">Contacts</a>   
         </div>
     </div>
+    
+
+    <section class="content">
+        <p class="section__text__p1"> Explore my</p>
+  <h1 class="title">Experience</h1>
+     <div class="experience-container">
+        <div class="experience-item">
+           <img src="{% static 'html.png'%}" alt="HTML Icon" class="experience-icon">
+           <div class="experience-details">
+              <h2 class="experience-title">HTML</h2>
+              <p class="experience-description">Experience in HTML5 markup language for web development.</p>
+           </div>
+        </div>
+  
+        <div class="experience-item">
+           <img src="{% static 'cascading.png'%}" alt="CSS Icon" class="experience-icon">
+           <div class="experience-details">
+              <h2 class="experience-title">CSS</h2>
+              <p class="experience-description">Proficiency in styling web pages using CSS3 for responsive design.</p>
+           </div>
+        </div>
+  
+        <div class="experience-item">
+           <img src="{% static 'js.png'%}" alt="JavaScript Icon" class="experience-icon">
+           <div class="experience-details">
+              <h2 class="experience-title">JavaScript</h2>
+              <p class="experience-description">Skills in client-side scripting with JavaScript for interactive web applications.</p>
+           </div>
+        </div>
+  
+        <div class="experience-item">
+           <img src="{% static 'python.jpg'%}" alt="Python Icon" class="experience-icon">
+           <div class="experience-details">
+              <h2 class="experience-title">Python</h2>
+              <p class="experience-description">Knowledge in Python programming language for backend development tasks.</p>
+           </div>
+        </div>
+     </div>
+
+     <section class="section" id="section-portfolio"> 
+        <p class="section__text__p1">My Work</p>
+        <h1 class="title">Portfolio</h1>
+        <div class="portfolio-details-container">
+          <div class="portfolio-item">
+            <img src="{% static 'git.jpg'%}" alt="Project 1" class="portfolio-image" />
+            <div class="portfolio-content">
+              <h3>Project 1</h3>
+              <p>This project is a responsive Registration login form using Html and CSS and also JavaScript. It is a simple Registration form to all students of SLAC.</p>
+              <a href="https://github.com/Blackstar28/FilipinoAJ.git" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="{% static 'git.jpg'%}" alt="Project 2" class="portfolio-image" />
+            <div class="portfolio-content">
+              <h3>Project 2</h3>
+              <p>This is Responsive Website Portfolio that I built with my personal Information. It includes my achievement and education and my Contact.</p>
+              <a href="https://github.com/Blackstar28/my1stProject.git" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <style>
+
+
+      body, html {
+             height: center;
+             margin: 0;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             color: aliceblue;
+            }
+        
+        .content {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px 100px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
 </body> 
 </html>
 

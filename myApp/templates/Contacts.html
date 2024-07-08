@@ -4,9 +4,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <link rel="stylesheet" href="{% static 'style.css'%}">
-        <link rel="stylesheet" href="{% static 'transition.css'%}">
-        <link rel="icon" href="{% static ''%}"> 
+        <link rel="stylesheet" href="{% static 'cstyle.css'%}">
         <title> Title </title>
     </head>
 
@@ -22,7 +20,125 @@
             <a href="{% url 'About' %}">About</a>
             <a href="{% url 'Portfolio' %}">Portfolio</a>
             <a href="{% url 'Contacts' %}">Contacts</a>   
+            
         </div>
     </div>
+
+    <section class="contact">
+        <div class="content">
+            <h1>CONTACTS</h1>
+            <p>Here in Contacts, you will find all of my official social media account. You can contact me or leave a message in the box below for inquries.    </p>                
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><img src="{% static 'fb-icon.png'%}" onclick="myFB()"></div>
+                    <div class="text">
+                        <h2>Facebook</h2>
+                        <p>facebook.com/TanoCeazar</P>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="{% static 'ig-icon.png'%}" onclick="myIG()"></div>
+                    <div class="text">
+                        <h2>Instagram</h2>
+                        <p>instagram.com/@ceazartanoo</P>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="{% static 'email-icon.png'%}" onclick="location.href = 'https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCHrkVgmhfDTRpvMDJbZvHxgbbgWTmzhXmxrNgrDVKbfVgNfGrDWfspMmbgKndmtsQCJnzgV'"></div>
+                    <div class="text">
+                        <h2>Email</h2>
+                        <p>ceazarjacusalem26@gmail.com</P>
+                    </div>
+                </div>
+            </div>
+        <div class="contactForm">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <h3>Register</h3>
+                    <div class="inputBox">
+                        <input type="text" name="fname" required>
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="email" required>
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="mssg" required></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <button class="submit">Submit</button>
+                    <style>
+                        .submit {
+                            width: 100px;
+                            background: black;
+                            color: white;
+                            border: none;
+                            cursor: pointer;
+                            padding: 10px;
+                            font-size: 18px;
+                        }
+                    </style>
+                </form>
+            </div> 
+        </div>
+    </section>
+
+      
+
+      
+
+      <style>
+      body, html {
+      
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            color: aliceblue;
+            background-size: cover;
+        }
+    
+        .title {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+
+        .content {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px 100px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-top: 10px;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            margin-top: 5px;
+            font-size: 1.2rem;
+        }
 </body> 
 </html>

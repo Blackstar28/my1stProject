@@ -39,6 +39,7 @@ html {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    
   }
   
   /* Navigation Bar */
@@ -66,4 +67,5 @@ html {
   .navbar a:hover::before {
     width: 100%;
   }
+  
   

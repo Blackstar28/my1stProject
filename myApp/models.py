@@ -9,3 +9,5 @@ class Register(models.Model):
         return self.email
         
         
+
+        

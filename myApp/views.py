@@ -11,6 +11,7 @@ def About (request):
     return render(request,'About.html')
 def Contacts (request):
 
+
     if request.method == 'POST':
         fname = request.POST['fname']
         email = request.POST['email']
